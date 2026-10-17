@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.navbar--landing {
+    position: absolute;
+    top: 50%;
+    align-items: center;
+}
