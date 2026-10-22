@@ -1,7 +1,141 @@
 @import "tailwindcss";
 
+/* Inria Serif font (200)  */
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../src/assets/fonts/InriaSerif/InriaSerif-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inria Serif font (400)*/
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../src/assets/fonts/InriaSerif/InriaSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inria Serif font (700) */
+
+@font-face {
+    font-family: 'Inria Serif';
+    src: url('../src/assets/fonts/InriaSerif/InriaSerif-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inria Sans font (300) */
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('../src/assets/fonts/InriaSans/InriaSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inria Sans font (400) */
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('../src/assets/fonts/InriaSans/InriaSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Inria Sans font (700) */
+
+@font-face {
+    font-family: 'Inria Sans';
+    src: url('../src/assets/fonts/InriaSans/InriaSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Changing the fonts to the elements */
+
+.body {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.navbar {
+    font-family: 'Inria Serif', serif;
+}
+
+.title {
+    font-family: 'Inria Serif', serif;
+}
+
+.content {
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
 .navbar--landing {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     align-items: center;
+}
+
+.navbar--main {
+    position: relative;
+    width: 98%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button--primary {
+    background-color: white;
+    color: black;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: normal;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #888;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(ellipse at 35% 50%, #080808 0 18%, transparent 43%),
+    radial-gradient(ellipse at 68% 45%, #575757 0 18%, transparent 45%),
+    linear-gradient(120deg, #222, #ddd, #111);
+  filter: blur(35px) contrast(1.2);
+  animation: drift 12s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  from { transform: translate(-3%, 2%) scale(1); }
+  to   { transform: translate(3%, -2%) scale(1.08); }
 }

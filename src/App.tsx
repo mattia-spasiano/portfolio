@@ -14,9 +14,10 @@ function App() {
         <Route 
           path='/'
           element={<LPLayout/>}/>
+      
         
         <Route
-          element={<MainLayout />} />
+          element={<MainLayout />}>
         <Route
           path='/projects'
           element={<ProjectsPage />} />
@@ -26,6 +27,7 @@ function App() {
         <Route
           path='/about'
           element={<AboutMe />} />
+        </Route>
       </Routes>
     </>
   )
