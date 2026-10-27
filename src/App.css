@@ -10,11 +10,25 @@
     font-display: swap;
 }
 
+.inria-serif-200 {
+    font-family: 'Inria Serif', serif;
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Inria Serif font (400)*/
 
 @font-face {
     font-family: 'Inria Serif';
     src: url('../src/assets/fonts/InriaSerif/InriaSerif-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.inria-serif-400 {
+    font-family: 'Inria Serif', serif;
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -30,11 +44,25 @@
     font-display: swap;
 }
 
+.inria-serif-700 {
+    font-family: 'Inria Serif', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Inria Sans font (300) */
 
 @font-face {
     font-family: 'Inria Sans';
     src: url('../src/assets/fonts/InriaSans/InriaSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+.inria-sans-300 {
+    font-family: 'Inria Sans', sans-serif;
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -50,11 +78,25 @@
     font-display: swap;
 }
 
+.inria-sans-400 {
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Inria Sans font (700) */
 
 @font-face {
     font-family: 'Inria Sans';
     src: url('../src/assets/fonts/InriaSans/InriaSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.inria-sans-700 {
+    font-family: 'Inria Sans', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-display: swap;
